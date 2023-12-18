@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard - WinterZilla</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="try.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+<header>
+    <a href="Home.html" class="logo"> <img src="logo.png" width="100px" height="100px"> </a>
+    <ul class="navmenu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="products.html" target="_blank">Products</a></li>
+        <!-- Add Product and View Product links -->
+        <li><a href="addproduct.php">Add Product</a></li>
+        <li><a href="viewproduct.php">View Product</a></li>
+    </ul>
+    <div class="nav-icon">
+        <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class='bx bxl-twitter' ></i></a>
+        <div class='bx bx-menu' id="menu-icon"></div>
+    </div>
+</header>
+
+<!-- Your existing content -->
+<section class="dashboard-container">
+    <h1>Welcome to Your Dashboard</h1>
+    <!-- Add your dashboard content here -->
+    <p>This is a secure area where you can manage your account and access exclusive content.</p>
+    <button onclick="logout()">Logout</button>
+</section>
+
+<footer>
+    <p>Copyright © 2023 Winterzilla. All rights reserved.</p>
+    <a href="Home.html"><h3>Winterzilla</h3> </a>
+    <a href="contact.html"> <h3>Contact</h3></a>
+    <a href="about.html"> <h3>About</h3></a>
+</footer>
+
+<script src="java.js"></script>
+
+<script>
+    function logout() {
+        // In a real-world scenario, you would perform actions like clearing the session on the server.
+        // For simplicity, we'll just redirect to the home page.
+        window.location.href = "Home.html";
+    }
+</script>
+
+</body>
+</html>

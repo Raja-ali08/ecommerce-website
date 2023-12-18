@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - WinterZilla</title>
+    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+<header>
+    <a href="Home.html" class="logo"> <img src="logo.png" width="100px" height="100px"> </a>
+    <div class="nav-icon">
+        <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class='bx bxl-twitter' ></i></a>
+        <div class='bx bx-menu' id="menu-icon"></div>
+    </div>
+</header>
+
+<section class="login-container">
+    <div class="login-form">
+        <h2>Login to Your Account</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>Copyright © 2023 Winterzilla. All rights reserved.</p>
+    <a href="Home.html"><h3>Winterzilla</h3> </a>
+    <a href="contact.html"> <h3>Contact</h3></a>
+    <a href="about.html"> <h3>About</h3></a>
+</footer>
+
+<script src="java.js"></script>
+
+<script>
+    function login() {
+        
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Set the fixed password
+        const fixedPassword = "password";
+
+        
+        if (username || password === fixedPassword) {
+            
+            window.location.href = "dashboard.html";
+        } else {
+            alert("Invalid username or password");
+        }
+    }
+</script>
+
+</body>
+</html>
